@@ -2,7 +2,6 @@
 
 This program reads student names and their corresponding grades, identifies the **second lowest grade**, and prints the names of all students who have that grade in **alphabetical order**.
 
----
 
 ## 🎯 Aim
 
@@ -11,7 +10,6 @@ To write a Python program to:
 - Identify the second lowest grade.
 - Print the names of students who have that grade, sorted alphabetically.
 
----
 
 ## 🧠 Algorithm
 
@@ -23,14 +21,43 @@ To write a Python program to:
 6. **Sort** the names alphabetically.
 7. **Print** each name on a new line.
 
----
 
 ## 💻  Program
 
-Add Code Here
+if __name__ == '__main__':
+    students = []
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        students.append([name, score])
+
+    unique_scores = sorted(set([student[1] for student in students]))
+    
+    second_lowest_grade = unique_scores[1]
+
+    second_lowest_students = [student[0] for student in students if student[1] == second_lowest_grade]
+
+    second_lowest_students.sort()
+
+    for name in second_lowest_students:
+        print(name)
 
 ## Output
 
+5
+Harry
+37.21
+Berry
+37.21
+Tina
+37.2
+Akriti
+41
+Harsh
+39
+
+Berry
+Harry
 ## Result
 
-
+The Python program to find students with the second lowest grade was successfully executed. The logic correctly handled identifying the unique grades, selecting the second lowest, and printing the corresponding student names in alphabetical order.
