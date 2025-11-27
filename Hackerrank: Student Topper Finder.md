@@ -1,9 +1,3 @@
-# # 🔢 Hackerrank:# 🏆 Student Topper Finder
-
-This Python program helps determine the **top-performing student** based on the total marks across five subjects. It uses a dictionary to store each student’s marks and identifies the topper using simple calculations and built-in functions.
-
----
-
 ## 🎯 Aim
 
 To maintain a dictionary of students with their marks in five subjects, calculate their **total marks**, store them in a new dictionary, and identify the **student with the highest total (topper)**.
@@ -49,8 +43,11 @@ print("-" * 30)
 print(f"The Class Topper is {topper_name} with {topper_score} marks.")
 
 ## OUTPUT
+
 Total Marks Dictionary: {'Arun': 433, 'Bina': 401, 'Chitra': 460, 'David': 421}
 ------------------------------
 The Class Topper is Chitra with 460 marks.
+
 ## RESULT
+
 The program was successfully executed. The dictionary of student marks was processed to calculate total scores, and the student with the highest total marks was correctly identified and displayed as the topper.
