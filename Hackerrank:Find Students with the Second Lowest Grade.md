@@ -24,6 +24,7 @@ To write a Python program to:
 
 ## 💻  Program
 
+```python
 if __name__ == '__main__':
     students = []
     for _ in range(int(input())):
@@ -32,7 +33,7 @@ if __name__ == '__main__':
         students.append([name, score])
 
     unique_scores = sorted(set([student[1] for student in students]))
-    
+
     second_lowest_grade = unique_scores[1]
 
     second_lowest_students = [student[0] for student in students if student[1] == second_lowest_grade]
@@ -41,6 +42,7 @@ if __name__ == '__main__':
 
     for name in second_lowest_students:
         print(name)
+```
 
 ## Output
 
