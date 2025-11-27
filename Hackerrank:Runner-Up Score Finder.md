@@ -19,11 +19,13 @@ To write a Python program that takes a list of scores from participants and find
 ---
 
 ## 💻 PROGRAM:
+```python
 n = int(input())
 scores = list(map(int, input().split()))
 unique_scores = list(set(scores))
 unique_scores.sort()
 print(unique_scores[-2])
+```
 
 
 ## OUTPUT
