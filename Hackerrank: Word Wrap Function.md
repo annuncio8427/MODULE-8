@@ -26,9 +26,30 @@ To write a Python function that takes a long string and a specified width, and r
 
 
 ## 🧪 Program
-Add Code Here
+
+def wrap(string, max_width):
+    wrapped_lines = []
+    for i in range(0, len(string), max_width):
+        wrapped_lines.append(string[i : i + max_width])
+    return "\n".join(wrapped_lines)
+
+if __name__ == '__main__':
+    string = input()
+    max_width = int(input())
+    result = wrap(string, max_width)
+    print(result)
 
 ## Sample Output
 
+ABCDEFGHIJKLIMNOQRSTUVWXYZ
+4
+ABCD
+EFGH
+IJKL
+IMNO
+QRST
+UVWX
+YZ
 ## Result
 
+The Python program to wrap a string into a paragraph of a specific width was successfully executed. The function correctly processed the input string and formatted it according to the specified width.
